@@ -1,0 +1,100 @@
+import { Platform, StyleSheet } from "react-native";
+
+export const HomeStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#0f0f1a",
+    padding: 20,
+  },
+  header: {
+    marginTop: Platform.OS === "ios" ? 50 : 30,
+    marginBottom: 30,
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: "bold",
+    color: "#fff",
+    marginBottom: 10,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: "#a0a0c0",
+    lineHeight: 24,
+  },
+  styleContainer: {
+    marginVertical: 20,
+  },
+  styleTitle: {
+    fontSize: 18,
+    color: "#fff",
+    marginBottom: 15,
+    fontWeight: "600",
+  },
+  uploadButton: {
+    backgroundColor: "#6e45e2",
+    borderRadius: 12,
+    paddingVertical: 18,
+    alignItems: "center",
+    marginTop: 20,
+    flexDirection: "row",
+    justifyContent: "center",
+    marginBottom: 20,
+  },
+  uploadButtonText: {
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: 18,
+    marginLeft: 10,
+  },
+  previewContainer: {
+    marginTop: 30,
+    borderRadius: 20,
+    overflow: "hidden",
+    borderWidth: 2,
+    borderColor: "#252538",
+    aspectRatio: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "auto",
+  },
+  previewPlaceholder: {
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 30,
+  },
+  previewPlaceholderText: {
+    color: "#a0a0c0",
+    marginTop: 10,
+    fontSize: 16,
+  },
+  previewImage: {
+    width: "100%",
+    height: "100%",
+  },
+  errorContainer: {
+    position: "absolute",
+    top: 40,
+    left: 20,
+    right: 20,
+    backgroundColor: "#ff6b6b",
+    padding: 15,
+    borderRadius: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    zIndex: 100,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  successContainer: {
+    backgroundColor: "#22BB33",
+  },
+  errorText: {
+    color: "#fff",
+    marginLeft: 10,
+    fontSize: 16,
+    flex: 1,
+  },
+});
