@@ -9,11 +9,11 @@ import {
 } from "react-native";
 import { MaterialIcons, FontAwesome5, Ionicons } from "@expo/vector-icons";
 import { Stack } from "expo-router";
-import StyleCardList from "@/components/StyleCardList";
 import useImageUpload from "./useImageUpload";
 import { UPLOAD_IMAGE_CONTENT } from "./constants";
-import Button from "@/components/Button";
 import { HomeStyles } from "./Home.styles";
+import Button from "@/components/common/Button";
+import StyleCardList from "@/components/common/StyleCardList";
 
 const styleOptions = [
   {

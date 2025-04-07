@@ -7,6 +7,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Provider } from "react-redux";
 import { store } from "@/store";
 import "react-native-reanimated";
+import { StyleSheet } from "react-native";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -28,7 +29,7 @@ export default function RootLayout() {
 
   return (
     <Provider store={store}>
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaView style={styles.safeAreaContainer}>
         <Stack initialRouteName="(main)/home">
           <Stack.Screen name="(main)/home" />
           <Stack.Screen
@@ -41,3 +42,9 @@ export default function RootLayout() {
     </Provider>
   );
 }
+
+const styles = StyleSheet.create({
+  safeAreaContainer: {
+    flex: 1,
+  },
+});

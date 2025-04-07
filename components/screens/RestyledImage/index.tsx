@@ -14,7 +14,7 @@ import { RESTYLED_IMAGE_CONTENT } from "./constans";
 import useRestyledImage from "./useRestyledImage";
 import { RestyledImageScreenStyles } from "./RestyledImage.styles";
 import { HomeStyles } from "../Home/Home.styles";
-import Button from "@/components/Button";
+import Button from "@/components/common/Button";
 
 const RestyledImage = () => {
   const {
@@ -66,7 +66,7 @@ const RestyledImage = () => {
           <Text style={RestyledImageScreenStyles.headerTitle}>
             Your AI Masterpiece
           </Text>
-          <View style={{ width: 28 }} />
+          <View style={RestyledImageScreenStyles.headerRightSpace} />
         </View>
 
         {/* restyled image renders here */}

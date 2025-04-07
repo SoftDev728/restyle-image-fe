@@ -16,6 +16,7 @@ export const RestyledImageScreenStyles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
   },
+  headerRightSpace: { width: 28 },
   imageContainer: {
     backgroundColor: "rgba(255,255,255,0.1)",
     borderRadius: 20,
