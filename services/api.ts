@@ -4,7 +4,7 @@ const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.EXPO_PUBLIC_BASE_URL,
-    timeout: 10000,
+    timeout: 30000,
     responseHandler: async (response) => {
       // For image responses, get ArrayBuffer
       const contentType = response.headers.get("content-type");
